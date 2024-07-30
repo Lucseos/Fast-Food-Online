@@ -112,3 +112,16 @@ body {
     max-width: calc(100% - 250px);
   }
 }
+
+#Tentang img {
+  margin-top: 1px;
+}
+
+#Tentang a img {
+  margin-top: 1px;
+  transition: transform 0.3s;
+}
+
+#Tentang a img:hover {
+  transform: scale(1.1);
+}
