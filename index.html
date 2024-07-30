@@ -17,61 +17,68 @@
     <a onclick="showSection('Tentang')">Tentang Kami</a>
 </div>
 
-<div class="row">
-    <div class="left">
-        <h2>Kepuasan Pelanggan Adalah Prioritas Kami</h2>
-        <marquee>Dapatkan Diskon Menggunakan Voucher</marquee>
+<div class="container">
+    <div class="main-content">
+        <div class="left">
+            
+        </div>
+
+        <div class="main">
+            <section id="Home" class="content">
+                <h2>Selamat Datang Di Fast Food Online</h2>
+                <p>Kami memiliki beragam pilihan untuk anda</p>
+                <marquee>Dapatkan Diskon Menggunakan Voucher</marquee>
+                <img src="burger.jpg" alt="burger" width="300px" height="200px" class="clickable-image" data-makanan="burger">
+                <img src="pizza.jpg" alt="pizza" width="300px" height="200px" class="clickable-image" data-makanan="pizza">
+                <img src="onion.jpg" alt="onion" width="300px" height="200px" class="clickable-image" data-makanan="onion">
+                <img src="hotdog.jpg" alt="hotdog" width="300px" height="200px" class="clickable-image" data-makanan="hotdog">
+                <img src="frenh.jpg" alt="French Fries" width="300px" height="200px" class="clickable-image" data-makanan="french">
+            </section>
+
+            <section id="Beli" class="content hidden">
+                <h2>Input Pembelian</h2>
+                <form id="transaksiForm">
+                    <label for="nama">Nama:</label><br>
+                    <input type="text" id="nama" name="nama" required><br><br>
+                    <label for="alamat">Alamat:</label><br>
+                    <input type="text" id="alamat" name="alamat" required><br><br>
+                    <label for="makanan">Makanan:</label><br>
+                    <select id="makananSelect" name="makanan" required>
+                        <option value="burger">Burger</option>
+                        <option value="pizza">Pizza</option>
+                        <option value="onion">Onion Ring</option>
+                        <option value="hotdog">Hotdog</option>
+                        <option value="french">French Fries</option>
+                    </select><br><br>
+                    <label for="jumlah">Jumlah:</label><br>
+                    <input type="number" id="jumlah" name="jumlah" required><br><br>
+                    <input type="submit" value="Submit">
+                </form>
+            </section>
+
+            <section id="Transaksi" class="content hidden">
+                <h2>Transaksi Pembelian</h2>
+                <div id="transaksiList"></div>
+            </section>
+
+            <section id="Tentang" class="content hidden">
+                <h2>Tentang Kami</h2>
+                <img src="Luckman.jpg" alt="Luckman Tejahadikusumah" width="250px" height="300px">
+                <p>Nama : Luckman Tejahadikusumah</p>
+                <p>NIM : 10523091</p>
+                <p>Kelas : IS-3</p>
+                <a href="https://www.instagram.com/luckmn.tj" target="_blank">
+                    <img src="ig.jpg" alt="Instagram" width="50px" height="50px"></a>
+                    <a href="mailto:tejahadikusumah@gmail.com">
+                        <img src="email.jpg" alt="Email" width="65px" height="50px">
+                    </a>
+            </section>
+        </div>
+
+        <div class="right">
+            
+        </div>
     </div>
-
-    <section id="Home" class="content">
-        <h2>Selamat Datang Di Fast Food Online</h2>
-        <p>Kami memiliki beragam pilihan untuk anda</p>
-        <img src="burger.jpg" alt="burger" width="300px" height="200px" class="clickable-image" data-makanan="burger">
-        <img src="pizza.jpg" alt="pizza" width="300px" height="200px" class="clickable-image" data-makanan="pizza">
-        <img src="onion.jpg" alt="onion" width="300px" height="200px" class="clickable-image" data-makanan="onion">
-        <img src="hotdog.jpg" alt="hotdog" width="300px" height="200px" class="clickable-image" data-makanan="hotdog">
-        <img src="frenh.jpg" alt="french" width="300px" height="200px" class="clickable-image" data-makanan="french">
-    </section>
-
-    <section id="Beli" class="content hidden">
-        <h2>Input Pembelian</h2>
-        <form id="transaksiForm">
-            <label for="nama">Nama:</label><br>
-            <input type="text" id="nama" name="nama" required><br><br>
-            <label for="alamat">Alamat:</label><br>
-            <input type="text" id="alamat" name="alamat" required><br><br>
-            <label for="makanan">Makanan:</label><br>
-            <select id="makananSelect" name="makanan" required>
-                <option value="burger">Burger</option>
-                <option value="pizza">Pizza</option>
-                <option value="onion">Onion Ring</option>
-                <option value="hotdog">Hotdog</option>
-                <option value="french">French Fries</option>
-            </select><br><br>
-            <label for="jumlah">Jumlah:</label><br>
-            <input type="number" id="jumlah" name="jumlah" required><br><br>
-            <input type="submit" value="Submit">
-        </form>
-    </section>
-
-    <section id="Transaksi" class="content hidden">
-        <h2>Transaksi Pembelian</h2>
-        <div id="transaksiList"></div>
-    </section>
-
-    <section id="Tentang" class="content hidden">
-        <h2>Tentang Kami</h2>
-        <img src="Luckman.jpg" alt="Luckman Tejahadikusumah" width="250px" height="300px">
-        <p>Nama : Luckman Tejahadikusumah</p>
-        <p>NIM : 10523091</p>
-        <p>Kelas : IS-3</p>
-        <a href="https://www.instagram.com/luckmn.tj" target="_blank">
-            <img src="ig.jpg" alt="Instagram" width="50px" height="50px"></a>
-        <a href="mailto:tejahadikusumah@gmail.com">
-                <img src="email.jpg" alt="Email" width="65px" height="50px">
-        </a>
-
-    </section>
 </div>
 
 <div class="footer">
